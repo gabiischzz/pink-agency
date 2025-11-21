@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Agency - Agência Digital de Marketing</title>
+    <link rel="stylesheet" href="landing-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" data-testid="navbar">
+        <div class="nav-container">
+            <div class="logo" data-testid="logo">
+                <i class="fas fa-gem"></i>
+                <span>Pink Agency</span>
+            </div>
+            <ul class="nav-menu" id="navMenu" data-testid="nav-menu">
+                <li><a href="#home" data-testid="nav-home">Início</a></li>
+                <li><a href="#services" data-testid="nav-services">Serviços</a></li>
+                <li><a href="#about" data-testid="nav-about">Sobre</a></li>
+                <li><a href="#portfolio" data-testid="nav-portfolio">Portfólio</a></li>
+                <li><a href="#testimonials" data-testid="nav-testimonials">Depoimentos</a></li>
+                <li><a href="#contact" data-testid="nav-contact" class="contact-btn">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" data-testid="hero-section">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-testid="hero-title">
+                    Transforme Sua Marca Com
+                    <span class="highlight">Marketing Digital</span>
+                </h1>
+                <p class="hero-subtitle" data-testid="hero-subtitle">
+                    Criamos landing pages de alta conversão e estratégias de marketing que impulsionam seu negócio
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-testid="cta-button" onclick="scrollToSection('contact')">
+                        <span>Começar Agora</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" data-testid="portfolio-button" onclick="scrollToSection('portfolio')">
+                        <span>Ver Portfólio</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-chart-line"></i>
+                    <span>+250% ROI</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-users"></i>
+                    <span>500+ Clientes</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-rocket"></i>
+                    <span>98% Satisfação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services" data-testid="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-testid="services-tag">O Que Fazemos</span>
+                <h2 class="section-title" data-testid="services-title">Nossos Serviços</h2>
+                <p class="section-description" data-testid="services-description">
+                    Soluções completas para elevar sua presença digital
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-testid="service-card-1">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Estratégias personalizadas para aumentar sua visibilidade online e alcançar seu público-alvo</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> SEO & SEM</li>
+                        <li><i class="fas fa-check"></i> Mídias Sociais</li>
+                        <li><i class="fas fa-check"></i> E-mail Marketing</li>
+                    </ul>
+                </div>
+                <div class="service-card featured" data-testid="service-card-2">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Páginas de alta conversão projetadas para transformar visitantes em clientes</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Design Responsivo</li>
+                        <li><i class="fas fa-check"></i> Alta Performance</li>
+                        <li><i class="fas fa-check"></i> Otimização CRO</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-testid="service-card-3">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análise & Relatórios</h3>
+                    <p>Acompanhamento detalhado de métricas e resultados para decisões estratégicas</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Google Analytics</li>
+                        <li><i class="fas fa-check"></i> Relatórios Personalizados</li>
+                        <li><i class="fas fa-check"></i> Insights Acionáveis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" data-testid="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbWFya2V0aW5nJTIwdGVhbXxlbnwwfHx8fDE3NjM2ODYxNjN8MA&ixlib=rb-4.1.0&q=85" alt="Nossa Equipe" data-testid="about-image">
+                    <div class="about-badge">
+                        <span>5+ Anos</span>
+                        <p>de Experiência</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag" data-testid="about-tag">Sobre Nós</span>
+                    <h2 class="section-title" data-testid="about-title">Especialistas em Marketing Digital</h2>
+                    <p class="about-description" data-testid="about-description">
+                        Somos uma agência boutique especializada em marketing digital e criação de landing pages de alta conversão. Nossa missão é ajudar empresas a crescerem online através de estratégias criativas e orientadas por dados.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item" data-testid="stat-item-1">
+                            <h3>500+</h3>
+                            <p>Projetos Concluídos</p>
+                        </div>
+                        <div class="stat-item" data-testid="stat-item-2">
+                            <h3>250%</h3>
+                            <p>ROI Médio</p>
+                        </div>
+                        <div class="stat-item" data-testid="stat-item-3">
+                            <h3>98%</h3>
+                            <p>Satisfação</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-testid="about-cta-button" onclick="scrollToSection('contact')">
+                        <span>Fale Conosco</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio" data-testid="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-testid="portfolio-tag">Trabalhos Recentes</span>
+                <h2 class="section-title" data-testid="portfolio-title">Nosso Portfólio</h2>
+                <p class="section-description" data-testid="portfolio-description">
+                    Projetos que transformaram negócios
+                </p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-testid="portfolio-item-1">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600" alt="Projeto 1">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Fashion</h3>
+                        <p>Landing page com 180% de aumento em conversões</p>
+                        <span class="portfolio-tag">Landing Page</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-testid="portfolio-item-2">
+                    <img src="https://images.unsplash.com/photo-1582005450386-52b25f82d9bb?w=600" alt="Projeto 2">
+                    <div class="portfolio-overlay">
+                        <h3>Tech Startup</h3>
+                        <p>Campanha digital que gerou 50k+ leads</p>
+                        <span class="portfolio-tag">Marketing Digital</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-testid="portfolio-item-3">
+                    <img src="https://images.pexels.com/photos/3194524/pexels-photo-3194524.jpeg?w=600" alt="Projeto 3">
+                    <div class="portfolio-overlay">
+                        <h3>SaaS Platform</h3>
+                        <p>Estratégia de conteúdo com ROI de 320%</p>
+                        <span class="portfolio-tag">Estratégia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials" data-testid="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-testid="testimonials-tag">Depoimentos</span>
+                <h2 class="section-title" data-testid="testimonials-title">O Que Dizem Nossos Clientes</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider" data-testid="testimonials-slider">
+                <div class="testimonial-card" data-testid="testimonial-card-1">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "A Pink Agency transformou completamente nossa presença digital. A landing page que criaram aumentou nossas conversões em 200%!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Silva</h4>
+                            <p>CEO, Fashion Brand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-testid="testimonial-card-2">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Profissionais excepcionais! O trabalho de marketing digital superou todas as nossas expectativas. Recomendo!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>João Santos</h4>
+                            <p>Fundador, Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-testid="testimonial-card-3">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Equipe criativa e dedicada. A estratégia de marketing trouxe resultados impressionantes em apenas 3 meses!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <p>Diretora, Beauty Store</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls" data-testid="slider-controls">
+                <button class="slider-btn" id="prevBtn" data-testid="prev-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn" id="nextBtn" data-testid="next-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" data-testid="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-tag" data-testid="contact-tag">Entre em Contato</span>
+                    <h2 class="section-title" data-testid="contact-title">Vamos Trabalhar Juntos</h2>
+                    <p class="contact-description" data-testid="contact-description">
+                        Pronto para transformar seu negócio digital? Entre em contato conosco e vamos criar algo incrível juntos!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item" data-testid="contact-email">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@pinkagency.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-testid="contact-phone">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (11) 98765-4321</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-testid="contact-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>São Paulo, Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" data-testid="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Seu Nome" required data-testid="form-name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu Email" required data-testid="form-email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Assunto" required data-testid="form-subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Sua Mensagem" required data-testid="form-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-testid="form-submit">
+                        <span>Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" data-testid="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Pink Agency</span>
+                    </div>
+                    <p>Transformando marcas através do marketing digital e landing pages de alta conversão.</p>
+                    <div class="social-links" data-testid="social-links">
+                        <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" data-testid="social-linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#services">Marketing Digital</a></li>
+                        <li><a href="#services">Landing Pages</a></li>
+                        <li><a href="#services">SEO</a></li>
+                        <li><a href="#services">Análise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Receba dicas de marketing digital</p>
+                    <form class="newsletter-form" data-testid="newsletter-form">
+                        <input type="email" placeholder="Seu email" data-testid="newsletter-email">
+                        <button type="submit" data-testid="newsletter-submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pink Agency. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="landing-script.js"></script>
+</body>
+</html>
